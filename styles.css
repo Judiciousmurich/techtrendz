@@ -145,10 +145,16 @@ nav ul li a:hover {
     /* Home page styles */
     
   .hero {
-      background: url('./images/contact_banner.jpg') no-repeat center center/cover;
       color: white;
-      padding: 100px 0;
+      padding: 60px 0;
       text-align: center;
+      height: 40vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.5)), url(./images/contact_banner.jpg)
   }
   
   .hero-content h1 {
