@@ -1,6 +1,6 @@
 <!-- header.php -->
 <header>
-    <div class="container">
+    <div class="container1">
         <div class="logo">
             <h1>TechTrendz</h1>
         </div>

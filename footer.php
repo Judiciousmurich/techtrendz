@@ -1,6 +1,6 @@
-<!-- footer.php -->
 <footer>
-    <div class="container">
-        <p>&copy; 2024 Technology Website</p>
+    <div class="footer-container">
+        <p>&copy; 2024 TechTrendz</p>
+        <p>Empowering Your Technology Journey</p>
     </div>
 </footer>

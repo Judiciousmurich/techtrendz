@@ -12,40 +12,28 @@
 <body>
     <?php include('header.php'); ?>
     
-    <div>
+   
     <div class="about_banner">
         <div>
             <h1>About Us</h1>
             <i>
-                <a href="/">Home</a> / About Us
+                <a href="/taskserverside">Home</a> / About Us
             </i>
         </div>
-    </div>
-
-    <div class="member_infos">
-        <h1>Who are we?</h1>
-        <div class="member_info">
-            <!-- Example of a single member, replicate this block for each member -->
-            <div class="user">
-                <img src="agentImage.jpg" class="img" alt="Profile" />
-                <div>
-                    <h3>Profile Info</h3><br/>
-                    <h3>email@example.com</h3><br/>
-                    <h3>John Doe</h3><br/>
-                    <p>+1234567890</p><br/>
-
-                    <p>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-linkedin"></i>
-                    </p>
-                </div>
-            </div>
-           
+</div>
+     <div class="about-wrapper">
+        <div class="about-text">
+            <h1>Welcome to TechTrendz</h1>
+            <h2>Who We Are</h2>
+            <p>
+                TechTrendz is a leading technology news platform providing the latest insights on tech innovations, software developments, and gadget reviews. We are dedicated to offering comprehensive and in-depth analysis for tech enthusiasts and professionals.
+            </p>
+            <a href="contact.php" class="contact-link">Contact Us</a>
+        </div>
+        <div class="about-image">
+            <img src="./images/about-tech.png" alt="Our Team at Work">
         </div>
     </div>
-</div>
-
     <?php include('footer.php'); ?>
 </body>
 </html>

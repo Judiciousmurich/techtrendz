@@ -34,7 +34,7 @@ header {
     height: 5vh;
 }
 
-.container {
+.container1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,12 +85,12 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: royalblue;
-    color: #20232a;
+    color: white;
 }
 
 
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         flex-direction: column;
         align-items: center;
         padding: 10px;
@@ -120,7 +120,7 @@ nav ul li a:hover {
 
 
 @media (max-width: 480px) {
-    .container {
+    .container1 {
         flex-direction: column;
         padding: 5px;
     }
@@ -141,6 +141,83 @@ nav ul li a:hover {
         box-sizing: border-box; 
     }
 }
+
+    /* Home page styles */
+    
+  .hero {
+      background: url('./images/contact_banner.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+  }
+  
+  .hero-content h1 {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+  }
+  
+  .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+      background-color: #0056b3;
+  }
+  
+  .features {
+      padding: 50px 20px;
+      text-align: center;
+  }
+  
+  .features h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+  }
+  
+  .feature-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+  }
+  
+  .feature {
+      max-width: 30%;
+  }
+  
+  .feature h3 {
+      font-size: 1.8rem;
+      color: #007bff;
+  }
+  
+  .feature p {
+      font-size: 1rem;
+      margin-top: 15px;
+  }
+  
+  @media (max-width: 768px) {
+      .feature-container {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .feature {
+          max-width: 80%;
+          margin-bottom: 20px;
+      }
+  }
+  
+
+
   /* Contact styles */
 
 .contact_banner{
@@ -214,9 +291,8 @@ nav ul li a:hover {
 
         /* About styles */
 
-  about_banner{
+  .about_banner{
     height: 40vh;
-    margin-top: 10vh;
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -225,7 +301,7 @@ nav ul li a:hover {
     background-image: linear-gradient(to bottom, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.5)), url(./images/contact_banner.jpg);
   }
   .about_banner > div{
-    color: black;
+ color: white;
   }
   .about_banner > div i{
     padding-top: 1.5rem;
@@ -233,61 +309,139 @@ nav ul li a:hover {
     text-decoration: none;
   }
   .about_banner > div i a{
-    text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bolder;
   }
-  
-  
-  .member_infos{
-    padding: 3rem 7%;
-    background-color: #E9EBF3;
-  
-  
-  }
-  .member_infos h1{
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-  .member_info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+  .about-wrapper {
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.about-text h2 {
+    color: #555;
+    font-size: 2rem;
+}
+
+.about-text p {
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.contact-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #0056b3;
+}
+
+.about-image {
+    flex: 1;
     text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-height: 300px;
+    }
+}
+
+
+/* services styles */
+
+
+.container2 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+} 
+
+.services-intro {
+  height: 40vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.5)), url(./images/contact_banner.jpg)
+}
+
+.services-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+ 
+}
+
+.services-intro p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.services-list {
+  padding: 50px 0;
+}
+
+.service-card {
+  background-color: white;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+      margin: 20px 0;
   }
-  .member_info .user{
-    padding: 2rem;
-  }
-  .member_info .user img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    /* margin-bottom: 1 rem; */
-  
-  
-  }
-  .member_info .user p{
-    padding-top: .3rem;
-    color: steelblue;
-  }
-  /*.member_info .user p i{
-    padding: .5rem;
-    font-size: 25px;
-  }
-  .member_info .user p i: hover{
-    color: blue;
-  }*/
-  .member_info .user p i{
-    cursor: pointer;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 50%;
-    background-color: royalblue;
-    color: white;
-  }
-  .member_info .user p i:hover{
-    color: white;
-    background-color: black;
-  }
+}
