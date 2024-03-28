@@ -12,11 +12,40 @@
 <body>
     <?php include('header.php'); ?>
     
-    <div class="container">
-        <h2>About Us</h2>
-        <p><?php echo getAboutContent(); ?></p>
+    <div>
+    <div class="about_banner">
+        <div>
+            <h1>About Us</h1>
+            <i>
+                <a href="/">Home</a> / About Us
+            </i>
+        </div>
     </div>
-    
+
+    <div class="member_infos">
+        <h1>Who are we?</h1>
+        <div class="member_info">
+            <!-- Example of a single member, replicate this block for each member -->
+            <div class="user">
+                <img src="agentImage.jpg" class="img" alt="Profile" />
+                <div>
+                    <h3>Profile Info</h3><br/>
+                    <h3>email@example.com</h3><br/>
+                    <h3>John Doe</h3><br/>
+                    <p>+1234567890</p><br/>
+
+                    <p>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
     <?php include('footer.php'); ?>
 </body>
 </html>
