@@ -445,3 +445,32 @@ nav ul li a:hover {
       margin: 20px 0;
   }
 }
+
+
+/* Footer styles */
+
+footer {
+  background-color: #092e52;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Enhance the existing container styles for consistency */
+.container, .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
