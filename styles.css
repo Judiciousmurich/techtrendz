@@ -294,6 +294,26 @@ nav ul li a:hover {
     border-radius: 10px;
     color: #20232a;
   }
+  @media (max-width: 768px) {
+    .contact_banner {
+        height: 30vh;
+    }
+
+    .main_contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_contact .contact_form form h1 {
+        font-size: 2rem;
+    }
+
+    .main_contact .contact_form form input,
+    .main_contact .contact_form form textarea {
+        padding: 0.8rem;
+    }
+}
+  
 
         /* About styles */
 
@@ -468,16 +488,16 @@ nav ul li a:hover {
 
 
   .service-card {
-      width: 70%; /* Increase width for small screens */
-      margin: 10px auto; /* Center the cards with automatic horizontal margin */
+      width: 70%; 
+      margin: 10px auto; 
   }
 
   .services-intro h1 {
-      font-size: 2rem; /* Reduce font size for smaller screens */
+      font-size: 2rem; 
   }
 
   .services-intro p {
-      font-size: 1rem; /* Reduce font size for smaller screens */
+      font-size: 1rem; 
   }
 }
 
