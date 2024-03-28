@@ -457,22 +457,18 @@ nav ul li a:hover {
 }
 
 
-/* Footer styles */
-
-footer {
-  background-color: #092e52;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
 @media (max-width: 768px) {
   .container2 {
       flex-direction: column;
   }
 
+  nav ul {
+    display: none;
+  }
+
+
   .service-card {
-      width: 90%; /* Increase width for small screens */
+      width: 70%; /* Increase width for small screens */
       margin: 10px auto; /* Center the cards with automatic horizontal margin */
   }
 
@@ -483,6 +479,16 @@ footer {
   .services-intro p {
       font-size: 1rem; /* Reduce font size for smaller screens */
   }
+}
+
+
+/* Footer styles */
+
+footer {
+  background-color: #092e52;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .footer-container {
