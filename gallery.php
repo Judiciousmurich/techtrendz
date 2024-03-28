@@ -1,27 +1,45 @@
-<!-- gallery.php -->
-
-<?php include('functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Technology Website</title>
+    <title>Gallery - TechTrendz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <?php include('header.php'); ?>
-    
-    <div class="container">
-        <h2>Gallery</h2>
-        <?php 
-        $images = getGalleryImages();
+
+    <section class="gallery-intro">
+        <h1>Our Gallery</h1>
+        <p>Explore our collection of technology-related images and visuals.</p>
+    </section>
+
+    <section class="gallery-grid">
+        <div class="gallery-item">
+            <img src="./images/about-tech.png" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/about-tech.png" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/about-tech.png" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/about-tech.png" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/about-tech.png" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/about-tech.png" alt="Gallery Image 4">
+        </div>
+        
+        <!-- $images = getGalleryImages();
         foreach ($images as $image) {
-            echo "<img src='$image' alt='Gallery Image'>";
-        }
-        ?>
-    </div>
-    
+                echo "<img src='$image' alt='Gallery Image'>"} -->
+        <!-- Add more items as needed -->
+    </section>
+
     <?php include('footer.php'); ?>
 </body>
 </html>
