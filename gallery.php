@@ -19,10 +19,10 @@
     </section>
 
     <!-- Image Gallery -->
-    <section class="gallery-grid">
+    <section class="gallery-grid" style="display: grid; grid-template-colums: auto; ">
         <?php
             // Assuming $images contains paths to images fetched from the database
-            $images = ["./images/gallery1.jpg", "./images/gallery2.jpg", "./images/gallery3.jpg", "./images/gallery4.jpg", "./images/gallery5.jpg", "./images/gallery6.jpg"];
+            $images = ["./images/about-tech.png", "./images/about-tech.png", "./images/about-tech.png", "./images/gallery4.jpg", "./images/gallery5.jpg", "./images/gallery6.jpg"];
             foreach ($images as $image) {
                 echo "<div class='gallery-item'><img src='{$image}' alt='Gallery Image'></div>";
             }
