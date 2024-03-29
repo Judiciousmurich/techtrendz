@@ -21,6 +21,8 @@ body {
     background-color: #f4f4f4;
 }
 
+
+
 /* Header styles */
 header {
     background-color: #fff;
@@ -141,6 +143,7 @@ nav ul li a:hover {
         box-sizing: border-box; 
     }
 }
+
 
     /* Home page styles */
     
@@ -581,4 +584,13 @@ nav ul li a:hover {
   .gallery-grid {
       grid-template-columns: 1fr;
   }
+}
+
+/* Footer styles */
+
+.footer-container {
+  background-color: #092e52;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }

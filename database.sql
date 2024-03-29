@@ -10,3 +10,10 @@ CREATE TABLE gallery (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     url VARCHAR(255)
 );
+
+CREATE TABLE images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    image_path VARCHAR(255) NOT NULL,
+    description TEXT,
+    uploaded_on DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -19,13 +19,30 @@
     </section>
 
     <!-- Image Gallery -->
-    <section class="gallery-grid" style="display: grid; grid-template-colums: auto; ">
+    <section class="gallery-grid">
         <?php
-            // Assuming $images contains paths to images fetched from the database
-            $images = ["./images/about-tech.png", "./images/about-tech.png", "./images/about-tech.png", "./images/gallery4.jpg", "./images/gallery5.jpg", "./images/gallery6.jpg"];
-            foreach ($images as $image) {
-                echo "<div class='gallery-item'><img src='{$image}' alt='Gallery Image'></div>";
+            // Database connection
+            $db = new mysqli('localhost', 'root', 'jMm@0000', 'serversidetask');
+
+            // Check connection
+            if ($db->connect_error) {
+                die("Connection failed: " . $db->connect_error);
             }
+
+            // Fetch images from database
+            $sql = "SELECT image_path FROM images";  // Assume your table and column names
+            $result = $db->query($sql);
+
+            if ($result->num_rows > 0) {
+                // Output data of each row
+                while($row = $result->fetch_assoc()) {
+                    echo "<div class='gallery-item'><img src='{$row['image_path']}' alt='Gallery Image'></div>";
+                }
+            } else {
+                echo "No images found";
+            }
+
+            $db->close();
         ?>
     </section>
 
