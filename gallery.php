@@ -9,42 +9,26 @@
 <body>
     <?php include('header.php'); ?>
 
-    <section class="gallery-intro">
-        <h1>Our Gallery</h1>
-        <p>Explore our collection of technology-related images and visuals.</p>
+    <!-- Upload Form -->
+    <section class="upload-form">
+        <h1>Upload Image</h1>
+        <form action="upload_image.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit" class="btn">Upload</button>
+        </form>
     </section>
 
+    <!-- Image Gallery -->
     <section class="gallery-grid">
-        <div class="gallery-item">
-            <img src="./images/about-tech.png" alt="Gallery Image 1">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/about-tech.png" alt="Gallery Image 2">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/about-tech.png" alt="Gallery Image 3">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/about-tech.png" alt="Gallery Image 4">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/about-tech.png" alt="Gallery Image 4">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/about-tech.png" alt="Gallery Image 4">
-        </div>
-      
+        <?php
+            // Assuming $images contains paths to images fetched from the database
+            $images = ["./images/gallery1.jpg", "./images/gallery2.jpg", "./images/gallery3.jpg", "./images/gallery4.jpg", "./images/gallery5.jpg", "./images/gallery6.jpg"];
+            foreach ($images as $image) {
+                echo "<div class='gallery-item'><img src='{$image}' alt='Gallery Image'></div>";
+            }
+        ?>
     </section>
 
     <?php include('footer.php'); ?>
 </body>
 </html>
-
-
-
-
-  
-        <!-- $images = getGalleryImages();
-        foreach ($images as $image) {
-                echo "<img src='$image' alt='Gallery Image'>"} -->
-        <!-- Add more items as needed -->
