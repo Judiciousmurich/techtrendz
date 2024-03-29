@@ -33,13 +33,18 @@
         <div class="gallery-item">
             <img src="./images/about-tech.png" alt="Gallery Image 4">
         </div>
-        
-        <!-- $images = getGalleryImages();
-        foreach ($images as $image) {
-                echo "<img src='$image' alt='Gallery Image'>"} -->
-        <!-- Add more items as needed -->
+      
     </section>
 
     <?php include('footer.php'); ?>
 </body>
 </html>
+
+
+
+
+  
+        <!-- $images = getGalleryImages();
+        foreach ($images as $image) {
+                echo "<img src='$image' alt='Gallery Image'>"} -->
+        <!-- Add more items as needed -->
