@@ -29,8 +29,7 @@
                 die("Connection failed: " . $db->connect_error);
             }
 
-            // Fetch images from database
-            $sql = "SELECT image_path FROM images";  // Assume your table and column names
+            // Fetch images from database// Assume your table and column names
             $result = $db->query($sql);
 
             if ($result->num_rows > 0) {
