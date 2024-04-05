@@ -1,7 +1,7 @@
 # TechTrendz
 
 
-Technology Website
+# Technology Website
 
 Overview
 
