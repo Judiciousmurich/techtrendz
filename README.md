@@ -47,7 +47,11 @@ PHP: Manages server-side logic, including form handling and database interaction
 MySQL: Stores and retrieves data, such as user-generated content and gallery images.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Judith Muthui
 >>>>>>> 1b1512851c8076ce94d26df92d973c2b40d1234f
+=======
+
+>>>>>>> 1446cce7cbbec5bb2a4809d435c042042fc96af7
