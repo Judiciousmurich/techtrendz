@@ -1,4 +1,4 @@
-# TechTrendz
+# Tech-Trendz
 
 
 # Technology Website
