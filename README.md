@@ -46,3 +46,4 @@ Backend
 PHP: Manages server-side logic, including form handling and database interaction.
 MySQL: Stores and retrieves data, such as user-generated content and gallery images.
 
+#Judith Muthui
